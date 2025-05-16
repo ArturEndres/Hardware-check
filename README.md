@@ -1,12 +1,12 @@
-# 🖥️ Coletor de Informações do Sistema (Windows)
+# 🖥️ Hardware Check - Windows
 
 Este script em Python coleta uma variedade de informações detalhadas de um computador com sistema operacional **Windows**, organizando os dados de **hardware**, **rede** e **sistema operacional** em um arquivo `.txt`, feito com o intuito de coletar e gerenciar informações de hardware.
 
 ---
 
-## 💡 Sobre o Projeto
-
-> Este projeto foi idealizado por **Artur** e todo o código foi implementado com **auxílio do ChatGPT**, a partir das minhas ideias. O objetivo é criar uma ferramenta prática para levantamento técnico de máquinas com Windows, útil especialmente para inventários de TI, suporte técnico e manutenção.
+> **🧠 Projeto inteiramente desenvolvido com auxílio do ChatGPT**  
+> A construção completa deste projeto — HTML, CSS e JavaScript — foi feita através de instruções dadas por mim ao ChatGPT.
+> Nenhuma linha de código foi copiada de outro lugar ou template pronto. Todo o layout, lógica e estilo foram moldados a partir dos meus prompts e ideias.
 
 ---
 
@@ -45,7 +45,7 @@ O script coleta as seguintes informações:
 
 Após a execução, será gerado um arquivo `.txt` no mesmo diretório do script, com nome baseado no nome digitado pelo usuário (ex: `joao.txt`). Esse arquivo contém todas as informações organizadas por seção:
 
-```txt
+```
 === HARDWARE ===
 Fabricante do PC: ...
 MOBO: ...
@@ -67,7 +67,7 @@ Hostname: ...
 === SISTEMA ===
 Sistema Operacional: ...
 Versão do SO: ...
-
+```
 ---
 
 ## Módulos Python
@@ -82,15 +82,6 @@ Versão do SO: ...
 
 ---
 
-## 🚀 Como Usar
-
-1. Clone este repositório ou copie o arquivo `.py` para o seu computador.  
-2. Execute o script com Python.  
-3. Digite o nome quando solicitado.  
-4. O relatório será salvo na mesma pasta com o nome `seunome.txt`.
-
----
-
 ## 📌 Observações Técnicas
 
 - O script faz chamadas ao PowerShell para coletar informações via WMI e comandos nativos do Windows.  
@@ -99,13 +90,7 @@ Versão do SO: ...
 
 ---
 
-## 👤 Autor
-
-Este projeto foi idealizado por Artur e desenvolvido em colaboração com ChatGPT (OpenAI), com base nas ideias e necessidades definidas por Artur.
-
----
-
 ## 📝 Licença
 
 Este projeto é de uso livre para fins pessoais e educacionais.  
-Caso deseje contribuir ou aprimorar, fique à vontade para fazer um fork ou abrir um pull request!
+Caso deseje contribuir ou aprimorar, fique à vontade.
