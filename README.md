@@ -1,80 +1,111 @@
-# 🧾 Inventário de Sistema em Python (via PowerShell)
+# 🖥️ Coletor de Informações do Sistema (Windows)
 
-Este repositório contém um script em Python para coletar e salvar informações detalhadas de hardware, rede e sistema operacional de um computador com **Windows**, utilizando **PowerShell** e a biblioteca `psutil`.
-
-> ⚠️ **Este código foi gerado integralmente com o auxílio do ChatGPT (OpenAI).** Nenhuma linha foi escrita sem apoio da IA.
+Este script em Python coleta uma variedade de informações detalhadas de um computador com sistema operacional **Windows**, organizando os dados de **hardware**, **rede** e **sistema operacional** em um arquivo `.txt`, feito com o intuito de coletar e gerenciar informações de hardware.
 
 ---
 
-## ✅ Funcionalidades
+## 💡 Sobre o Projeto
 
-- Coleta e salva automaticamente:
-  - ✅ Fabricante do computador e da placa-mãe (MOBO)
-  - ✅ Informações da CPU e GPU
-  - ✅ Capacidade e quantidade de pentes de RAM
-  - ✅ Modelo dos discos, espaço total e livre
-  - ✅ Número de série (BIOS)
-  - ✅ Endereço MAC e IP
-  - ✅ DNS configurado
-  - ✅ Status do DHCP (IP fixo ou dinâmico)
-  - ✅ Nome do adaptador de rede
-  - ✅ Hostname
-  - ✅ Nome, versão e build do sistema operacional
-
-- Gera um arquivo `.txt` com todas as informações organizadas.
+> Este projeto foi idealizado por **Artur** e todo o código foi implementado com **auxílio do ChatGPT**, a partir das minhas ideias. O objetivo é criar uma ferramenta prática para levantamento técnico de máquinas com Windows, útil especialmente para inventários de TI, suporte técnico e manutenção.
 
 ---
 
-## ▶️ Como usar
+## ⚙️ Funcionalidades
 
-1. Tenha o **Python 3.6+** instalado.
-2. Instale a biblioteca `psutil`, se ainda não tiver:
-   ```bash
-   pip install psutil
-Execute o script:
+O script coleta as seguintes informações:
 
-bash
-Copiar
-Editar
-python inventario.py
-Digite seu nome quando solicitado. Um arquivo com o nome informado será salvo no mesmo diretório.
+### Nome
+- Primeiramente, pergunte o nome da pessoa
+  
+### 🔧 Hardware
+- Fabricante do computador  
+- Placa-mãe (MOBO)  
+- CPU  
+- GPU  
+- Quantidade de RAM total  
+- Quantidade de pentes de RAM  
+- Discos (modelo, tamanho total e espaço livre)  
+- Número de série do equipamento  
 
-📄 Exemplo de saída
-yaml
-Copiar
-Editar
-Data e Hora da coleta: 2025-05-15 14:30:21
+### 🌐 Rede
+- Endereço MAC  
+- Endereço IP  
+- Servidores DNS  
+- Status do DHCP (dinâmico ou fixo)  
+- Nome do adaptador de rede ativo  
+- Nome do host (hostname)  
 
+### 🖥️ Sistema Operacional
+- Nome e versão do sistema operacional  
+- Build e release do Windows  
+
+---
+
+## 📁 Saída
+
+Após a execução, será gerado um arquivo `.txt` no mesmo diretório do script, com nome baseado no nome digitado pelo usuário (ex: `joao.txt`). Esse arquivo contém todas as informações organizadas por seção:
+
+```txt
 === HARDWARE ===
-Fabricante do PC: Dell Inc.
-MOBO: 0F4GRK
-CPU: Intel(R) Core(TM) i7-9700 CPU @ 3.00GHz
-GPU: NVIDIA GeForce GTX 1650
-RAM: 16.0 GB
-Qtd. Pentes de RAM: 2
-Disco(s): WDC SSD 500GB - Total: 500 GB / Livre: 200 GB
-Número Serial: 1234ABCD5678
+Fabricante do PC: ...
+MOBO: ...
+CPU: ...
+GPU: ...
+RAM: ...
+Qtd. Pentes de RAM: ...
+Disco(s): ...
+Número Serial: ...
 
 === REDE ===
-MAC Address: 00:1A:2B:3C:4D:5E
-IP Address: 192.168.0.105
-DNS: 8.8.8.8, 1.1.1.1
-DHCP Status: DINÂMICO
-Adaptador de Rede: Wi-Fi
-Hostname: DESKTOP-XYZ123
+MAC Address: ...
+IP Address: ...
+DNS: ...
+DHCP Status: ...
+Adaptador de Rede: ...
+Hostname: ...
 
 === SISTEMA ===
-Sistema Operacional: Microsoft Windows 10 Pro (Build 19045, Release 22H2)
-Versão do SO: 10.0.19045
+Sistema Operacional: ...
+Versão do SO: ...
 
-📌 Observações
-Compatível apenas com Windows (uso de comandos PowerShell).
+---
 
-Pode retornar "Não encontrado" em dispositivos com permissões restritas ou drivers ausentes.
+# 📦 Módulos Python Utilizados
 
-Requer que o PowerShell esteja instalado e acessível via terminal.
+- `os`  
+- `platform`  
+- `socket`  
+- `uuid`  
+- `psutil`  
+- `subprocess`  
+- `datetime`  
 
-📜 Licença
-Distribuído sob a Licença MIT.
-Sinta-se livre para usar, modificar e distribuir. Se manter a essência do projeto, considere manter a menção ao uso do ChatGPT 🤖.
+---
 
+## 🚀 Como Usar
+
+1. Clone este repositório ou copie o arquivo `.py` para o seu computador.
+2. Execute o script com Python.
+3. Digite o nome quando solicitado.
+4. O relatório será salvo na mesma pasta com o nome: `seunome.txt`.
+
+---
+
+## 📌 Observações Técnicas
+
+- O script faz chamadas ao **PowerShell** para coletar informações via **WMI** e comandos nativos do Windows.
+- O tratamento de erros é simples: caso algo falhe, será retornado `"Não encontrado"`.
+- As informações são formatadas de forma legível e organizadas por categoria.
+
+---
+
+## 👤 Autor
+
+Este projeto foi idealizado por **Artur** e desenvolvido em colaboração com **ChatGPT (OpenAI)**, com base nas ideias e necessidades definidas por Artur.
+
+---
+
+## 📝 Licença
+
+Este projeto é de uso livre para fins **pessoais e educacionais**.  
+Caso deseje contribuir ou aprimorar, fique à vontade para **fazer um fork ou abrir um pull request**!
