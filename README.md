@@ -70,42 +70,42 @@ Versão do SO: ...
 
 ---
 
-# 📦 Módulos Python Utilizados
+## Módulos Python
 
-- `os`  
-- `platform`  
-- `socket`  
-- `uuid`  
-- `psutil`  
-- `subprocess`  
-- `datetime`  
+- os  
+- platform  
+- socket  
+- uuid  
+- psutil  
+- subprocess  
+- datetime
 
 ---
 
 ## 🚀 Como Usar
 
-1. Clone este repositório ou copie o arquivo `.py` para o seu computador.
-2. Execute o script com Python.
-3. Digite o nome quando solicitado.
-4. O relatório será salvo na mesma pasta com o nome: `seunome.txt`.
+1. Clone este repositório ou copie o arquivo `.py` para o seu computador.  
+2. Execute o script com Python.  
+3. Digite o nome quando solicitado.  
+4. O relatório será salvo na mesma pasta com o nome `seunome.txt`.
 
 ---
 
 ## 📌 Observações Técnicas
 
-- O script faz chamadas ao **PowerShell** para coletar informações via **WMI** e comandos nativos do Windows.
-- O tratamento de erros é simples: caso algo falhe, será retornado `"Não encontrado"`.
-- As informações são formatadas de forma legível e organizadas por categoria.
+- O script faz chamadas ao PowerShell para coletar informações via WMI e comandos nativos do Windows.  
+- O script trata erros de forma simples, retornando "Não encontrado" caso algo falhe.  
+- As informações são formatadas de forma legível e separadas por categoria.
 
 ---
 
 ## 👤 Autor
 
-Este projeto foi idealizado por **Artur** e desenvolvido em colaboração com **ChatGPT (OpenAI)**, com base nas ideias e necessidades definidas por Artur.
+Este projeto foi idealizado por Artur e desenvolvido em colaboração com ChatGPT (OpenAI), com base nas ideias e necessidades definidas por Artur.
 
 ---
 
 ## 📝 Licença
 
-Este projeto é de uso livre para fins **pessoais e educacionais**.  
-Caso deseje contribuir ou aprimorar, fique à vontade para **fazer um fork ou abrir um pull request**!
+Este projeto é de uso livre para fins pessoais e educacionais.  
+Caso deseje contribuir ou aprimorar, fique à vontade para fazer um fork ou abrir um pull request!
