@@ -15,7 +15,8 @@ Este script em Python coleta uma variedade de informações detalhadas de um com
 O script coleta as seguintes informações:
 
 ### Nome
-- Primeiramente, pergunte o nome da pessoa
+
+- Primeiramente, pergunta o nome da pessoa
   
 ### 🔧 Hardware
 - Fabricante do computador  
@@ -90,7 +91,5 @@ Versão do SO: ...
 
 ---
 
-## 📝 Licença
-
-Este projeto é de uso livre para fins pessoais e educacionais.  
-Caso deseje contribuir ou aprimorar, fique à vontade.
+## 📄 Licença
+Este projeto está sob a licença MIT. Sinta-se livre para usar, modificar e compartilhar.
